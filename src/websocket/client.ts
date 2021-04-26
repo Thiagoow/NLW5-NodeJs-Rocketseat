@@ -1,10 +1,15 @@
 import { io } from "../http";
-import { ConnectionService } from "../services/ConnectionsService";
-import { MessagesService } from "../services/MessagesService";
+import { ConnectionsService } from "../services/ConnectionsService";
 import { UsersService } from "../services/UsersService";
+import { MessagesService } from "../services/MessagesService";
+
+interface IParams {
+  text: string;
+  email: string;
+}
 
 io.on("connect", (socket) => {
-  const connectionsService = new ConnectionService();
+  const connectionsService = new ConnectionsService();
   const usersService = new UsersService();
   const messagesService = new MessagesService();
 
@@ -15,7 +20,7 @@ io.on("connect", (socket) => {
 
     const userExists = await usersService.findByEmail(email);
 
-    if (userExists) {
+    if (!userExists) {
       const user = await usersService.create(email);
 
       await connectionsService.create({

@@ -9,7 +9,7 @@ interface IConnectionCreate {
   id?: string;
 }
 
-class ConnectionService {
+class ConnectionsService {
   private connectionsRepository: Repository<Connection>;
 
   constructor() {
@@ -29,4 +29,4 @@ class ConnectionService {
   }
 }
 
-export { ConnectionService };
+export { ConnectionsService };
