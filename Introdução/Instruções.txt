@@ -1,6 +1,3 @@
-Para usar o arquivo da primeira aula, copie o código do arquivo 
-"server.ts", e cole no arquivo com mesmo nome na pasta "src"
-
 REQUISITOS DO MEU 1º PROJETO COM NODE.JS:
 
 Dependências:
@@ -16,6 +13,14 @@ E usamos também, fora do VS Code:
 -Node.js 14 + NPM (instalado via Chocolatey, com comandos no WindowsPowerShell)
 -Yarn 1.22 (instalado via comandos WindowsPowerShell)
 
+------------------------------------//------------------------------------------
+Para usar o arquivo da primeira aula, copie o código do arquivo 
+"server.ts", e cole no arquivo com mesmo nome na pasta "src".
+
+Pra usar a coleção de requisições desse projeto no Postman, ou qualquer outro
+client de APIs. Importe para ele o arquivo "NLW#05.postman_collection.json"
+nessa mesma pasta.
+
 RODANDO O NOSSO .TS PELO TERMINAL DO NODE COM YARN:
 -Digite: "yarn dev" no terminal.
 PARA PARAR DE RODAR NOSSO .TS PELO TERMINAL:
@@ -28,9 +33,7 @@ http://localhost:3333/pages/admin (Pág que os admins veem)
 
 Pra apagar os dados da DB, execute os comandos (um por voz)
 no query do BeeKeeper com a Db aberta, e clique em Run:
-
     delete from connections
 (Apaga os registros de conexões)
-
     delete from messages
 (Apaga as mensagens salvas na DB)

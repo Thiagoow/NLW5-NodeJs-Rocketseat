@@ -49,12 +49,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}messages/24d8cecd-39ed-4063-b1be-458845e31f87",
+					"raw": "{{baseURL}}messages/7cbc1e76-993a-4c73-9c8a-b1f77713bbfb",
 					"host": [
 						"{{baseURL}}messages"
 					],
 					"path": [
-						"24d8cecd-39ed-4063-b1be-458845e31f87"
+						"7cbc1e76-993a-4c73-9c8a-b1f77713bbfb"
 					]
 				}
 			},
@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"user_id\": \"24d8cecd-39ed-4063-b1be-458845e31f87\",\r\n    \"text\": \"Olá eu preciso de ajuda!\",\r\n    \"admin_id\": \"e017f423-cd15-4bd8-9438-d7c0933df69f\"\r\n\r\n}",
+					"raw": "{\r\n    \"user_id\": \"7cbc1e76-993a-4c73-9c8a-b1f77713bbfb\",\r\n    \"text\": \"Olá eu preciso de ajuda!\",\r\n    \"admin_id\": \"e017f423-cd15-4bd8-9438-d7c0933df69f\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -110,7 +110,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"chat\": true,\r\n    \"username\": \"admon\"\r\n}",
+					"raw": "{\r\n    \"chat\": true,\r\n    \"username\": \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -133,7 +133,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"emailemail@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"email\": \"email@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
