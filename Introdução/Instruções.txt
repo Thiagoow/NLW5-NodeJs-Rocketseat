@@ -1,12 +1,5 @@
-Para usar o arquivo de tal aula, renomeie-o para 
-"server.ts" e mova para a pasta "src"
-
-
-
-
-
-
-
+Para usar o arquivo da primeira aula, copie o código do arquivo 
+"server.ts", e cole no arquivo com mesmo nome na pasta "src"
 
 REQUISITOS DO MEU 1º PROJETO COM NODE.JS:
 
@@ -16,6 +9,7 @@ Dependências:
 -TypeORM;
 -Knex.js;
 -SQLite3;
+-{{ mustache }};
 
 E usamos também, fora do VS Code:
 -API Ecosystem Hoppsctoch (antiga PostWoman);
@@ -27,3 +21,16 @@ RODANDO O NOSSO .TS PELO TERMINAL DO NODE COM YARN:
 PARA PARAR DE RODAR NOSSO .TS PELO TERMINAL:
 -Clique no lixinho na aba superior da janela do terminal.
 
+Para acessar o projeto funcionando, abra os links:
+http://localhost:3333/pages/client (Pág que os clientes veem)
+
+http://localhost:3333/pages/admin (Pág que os admins veem)
+
+Pra apagar os dados da DB, execute os comandos (um por voz)
+no query do BeeKeeper com a Db aberta, e clique em Run:
+
+    delete from connections
+(Apaga os registros de conexões)
+
+    delete from messages
+(Apaga as mensagens salvas na DB)

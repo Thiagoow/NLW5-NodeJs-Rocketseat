@@ -4,10 +4,6 @@ import { MessagesRepository } from "../repositories/MessagesRepository";
 
 interface IMessageCreate {
   admin_id?: string;
-  /*
-  Caso não haja um admin disponível, adicionamos o
-  "?" antes dos ":". Para identificar o admin como opcional
-  */
   text: string;
   user_id: string;
 }
@@ -27,6 +23,7 @@ class MessagesService {
     });
 
     await this.messagesRepository.save(message);
+
     return message;
   }
 

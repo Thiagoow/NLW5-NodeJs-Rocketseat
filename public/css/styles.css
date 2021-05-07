@@ -9,6 +9,11 @@ body {
   background: #ffffff;
 }
 
+/*Não deixa crescer a altura do chat mesmo com mais mensagens:*/
+.chat__messages {
+  max-height: 470px;
+}
+
 .btn_support {
   float: right;
   width: 153px;
@@ -67,6 +72,7 @@ body {
 .chat_support {
   position: absolute;
   max-width: 330px;
+  max-height: 470px;
   right: 10px;
   animation: up 1s;
 }
@@ -108,6 +114,7 @@ body {
   padding: 20px 10px;
   margin: 10px 0;
   width: 250px;
+  max-height: 470px;
   margin-left: 30px;
   border-radius: 4px;
   line-height: 20px;
@@ -119,6 +126,7 @@ body {
   padding: 20px 10px;
   margin: 10px 0;
   width: 250px;
+  max-height: 470px;
   margin-left: 30px;
   border-radius: 4px;
   line-height: 20px;
@@ -126,7 +134,7 @@ body {
 
 .text_support {
   border: 1px solid #cec9c9;
-  max-height: 500px;
+  max-height: 470px;
   overflow-y: scroll;
   /* border-bottom: 0px; */
 }
@@ -176,7 +184,7 @@ body {
 .text_help textarea {
   width: 290px;
   height: 115px;
-
+  max-height: 470px;
   padding: 10px;
 
   background: #ffffff;
@@ -246,4 +254,100 @@ input[type="text"]:focus {
 .date {
   text-align: right;
   font-size: 1px;
+}
+
+.btn_atd {
+  cursor: pointer;
+  color: #fff;
+  background: #b32a2a;
+  border: none;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_atd:hover {
+  opacity: 0.9;
+}
+
+.admin {
+  border: 1px solid #ededed;
+  margin-top: 5px;
+}
+
+.email {
+  float: left;
+  width: 350px;
+}
+
+.admin_send_message {
+  display: flex;
+  flex-direction: row;
+}
+
+.admin_send_message input {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.admin_send_message button {
+  width: 100px;
+  cursor: pointer;
+}
+
+.admin_list_messages {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.admin_message_admin {
+  width: 300px;
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+#atendimentos {
+  width: 600px;
+}
+
+.admin_message_client {
+  width: 300px;
+  background: #6f5eab;
+  padding: 10px;
+  margin: 10px;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.admin_date {
+  font-size: 10px;
+  color: #fff;
+}
+
+.in_support {
+  background: #8d7aef;
+  color: #fff;
+  font-size: 17px;
+}
+
+.btn_send {
+  background: #1eb363;
+  color: #eee;
+  border: none;
+}
+
+.btn_send:hover {
+  opacity: 0.8;
 }

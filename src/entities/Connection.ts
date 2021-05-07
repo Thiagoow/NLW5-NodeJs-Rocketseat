@@ -7,6 +7,7 @@ import {
   JoinColumn,
   UpdateDateColumn,
 } from "typeorm";
+
 import { v4 as uuid } from "uuid";
 import { User } from "./User";
 
@@ -34,11 +35,8 @@ class Connection {
   @UpdateDateColumn()
   updated_at: Date;
 
-  //Construtor de um novo usuário;
   constructor() {
-    //Verifica se o id já tá preenchido:
     if (!this.id) {
-      //Se o id não tá preenchido, cria um novo uuid:
       this.id = uuid();
     }
   }

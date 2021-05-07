@@ -17,17 +17,17 @@ PARA PARAR DE RODAR NOSSO .TS PELO TERMINAL:
 */
 
 //Importando a dependência do express:
-import express, { response } from "express";
+import express from "express";
 
 import { createServer } from "http";
 import { Server, Socket } from "socket.io";
 // Módulo próprio Node.js que permite a gente ver o caminho de um arquivo:
 import path from "path";
 
-//Importando a rota do repositório:
-import { routes } from "./routes";
 //Importando a dependência do TypeORM (lá no ./database/index.ts):
 import "./database";
+//Importando a rota do repositório:
+import { routes } from "./routes";
 
 const app = express();
 
@@ -39,6 +39,10 @@ app.set("view engine", "html");
 
 app.get("/pages/client", (request, response) => {
   return response.render("html/client.html");
+});
+
+app.get("/pages/admin", (request, response) => {
+  return response.render("html/admin.html");
 });
 
 //Cria o protocolo http:

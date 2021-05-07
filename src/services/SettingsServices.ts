@@ -15,15 +15,13 @@ class SettingsService {
   }
 
   async create({ chat, username }: ISettingsCreate) {
-    //Checando se já existe um usuário:
-    //Select => from settings where username = "username" limit 1
+    //Select * from settings where username = "username" limit 1;
     const userAlreadyExists = await this.settingsRepository.findOne({
       username,
     });
 
     if (userAlreadyExists) {
-      throw new Error("One user already exists! 🥺");
-      //Agora temos que passar isso pro SettingsController.
+      throw new Error("User already exists!");
     }
 
     const settings = this.settingsRepository.create({
