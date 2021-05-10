@@ -23,14 +23,14 @@ import "./database";
 
 const app = express();
 
-/**
- * Tipos de métodos de requisição no NodeJS:
- * GET = Buscar algo (Requisições padrões dos browser)
- * POST = Criar algo (Necessário um ambiente de desenvolvimento de API)
- * PUT = Alterar algo
- * DELETE = Deletar algo
- * PATCH = Altera uma informação específica
- */
+/*
+Métodos de requisições HTTP (CRUD + patch):
+ C- Create = GET -> Buscar algo (Requisições padrões dos browser)
+ R- Read = POST -> Criar algo (Necessário um ambiente de desenvolvimento de API)
+ U- Update = PUT -> Alterar algo
+ D- Delete = DELETE -> Deletar algo
+ PATCH -> Altera uma informação específica
+*/
 
 //1º rota: Mostra uma mensagem no navegador acessando o "http://localhost:3333/"
 app.get("/", (request, response) => {
